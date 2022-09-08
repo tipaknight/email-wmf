@@ -1,0 +1,657 @@
+<heml>
+
+	<head>
+		<preview>WMF</preview>
+		<style>
+			@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+			body {
+				background: #e5e5e5;
+				margin: 0;
+				height: 100%;
+				font-family: Roboto, sans-serif;
+			}
+
+			container {
+				background: #ffffff;
+				width: 100%;
+				max-width: 600px;
+			}
+
+			container.pd {
+				padding: 0 20px;
+			}
+
+			container.color {
+				background: #274C60;
+			}
+
+			img {
+				margin: 0 auto;
+				padding: 0;
+			}
+
+			img.left {
+				margin: 0;
+			}
+
+			ul {
+				font-family: Roboto, sans-serif;
+				margin: 0 20px;
+			}
+
+			.col-w-1 {
+				max-width: 500px;
+			}
+
+			.col-w-2 {
+				max-width: 560px;
+			}
+
+			.mob-v {
+				display: none !important;
+			}
+
+			.title-1-b {
+				max-width: 530px;
+				text-align: center;
+				font-size: 25px;
+				line-height: 20px;
+				margin: 0 auto;
+				padding: 35px 0 0;
+			}
+
+			.title-2-b {
+				text-align: left;
+				font-size: 20px;
+				line-height: 25px;
+				margin: 0 auto;
+
+			}
+
+			.title-1-w {
+				max-width: 530px;
+				text-align: center;
+				font-size: 25px;
+				line-height: 20px;
+				margin: 0 auto;
+				padding: 35px 0 0;
+				color: #ffffff;
+			}
+
+			.title-2-w {
+				max-width: 530px;
+				text-align: left;
+				font-size: 25px;
+				line-height: 20px;
+				margin: 0;
+				padding: 35px 0 0 10px;
+				color: #ffffff;
+			}
+
+			.content-b {
+				max-width: 530px;
+				text-align: center;
+				font-size: 20px;
+				font-weight: 300;
+				margin: 0 auto;
+				padding: 20px 0 30px;
+				line-height: 25px;
+			}
+
+			.content-w {
+				max-width: 530px;
+				text-align: center;
+				font-size: 15px;
+				font-weight: 300;
+				margin: 0 auto;
+				padding: 20px 0;
+				line-height: 20px;
+				color: #ffffff;
+			}
+
+			.content-2-b {
+				text-align: left;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 22px;
+			}
+		</style>
+		<style>
+			.line-pd {
+				padding: 12px 0 12px 10px;
+			}
+
+			.line-2-pd {
+				padding: 12px 0 5px;
+			}
+
+			.text-item {
+				font-size: 12px;
+				line-height: 18px;
+				font-weight: 300;
+				color: #ffffff;
+			}
+
+			.text-list {
+				font-size: 14px;
+				line-height: 18px;
+				font-weight: 300;
+				color: #ffffff;
+				margin: 0 10px;
+			}
+
+			.num {
+				width: 37px;
+				height: 37px;
+				padding-right: 3px;
+			}
+
+			.num-pd {
+				padding-bottom: 20px;
+			}
+
+			.img-prod {
+				vertical-align: middle;
+			}
+
+			.text-prod {
+				max-width: 300px;
+				padding-left: 10px;
+			}
+
+
+			.prod-pd-item {
+				padding: 15px 5px;
+			}
+
+			.btn-pd {
+				padding: 20px;
+			}
+
+			.item-txt {
+				text-align: center;
+				font-size: 11px;
+				font-weight: 300;
+				line-height: 15px;
+			}
+
+			.offer-content {
+				font-size: 13px;
+				padding: 10px 20px;
+				color: #b1b3b3;
+				line-height: 14px;
+			}
+
+			.foot-txt {
+				max-width: 560px;
+				text-align: center;
+				margin: 0 auto;
+				padding: 15px 0 5px;
+			}
+
+			.foot-txt-list {
+				color: #000000;
+				font-size: 10px;
+				font-weight: 700;
+				padding-top: 5px;
+			}
+
+			.offer-block {
+				margin: 0 auto !important;
+				padding-left: 10px;
+			}
+
+			.offer-central {
+				display: block;
+				width: 300px;
+				margin: 0 auto;
+				padding-left: 30px;
+			}
+
+			.offer-img {
+				float: left;
+				padding: 0px 15px 10px 0;
+			}
+
+			.offer-text {
+				font-size: 12px;
+				margin: 6px 0 0 60px;
+				line-height: 14px;
+				color: #53565A;
+			}
+
+			.offer-title {
+				font-size: 14px;
+				margin: 14px 0 0 60px;
+				line-height: 12px;
+
+			}
+		</style>
+		<style>
+			@media only screen and (max-width: 600px) and (max-device-width: 600px) {
+				.desk-v {
+					display: none !important;
+				}
+
+				.mob-v {
+					display: block !important;
+				}
+
+				.col-w-1 {
+					max-width: 100% !important;
+				}
+
+				.img-prod {
+					padding: 10px 0 !important;
+				}
+
+				.text-prod {
+					max-width: 100% !important;
+					padding: 10px !important;
+				}
+
+				.btn-pd {
+					padding: 30px 10px 20px 10px !important;
+				}
+			}
+
+			@media only screen and (max-width:480px) and (max-device-width:480px) {
+				.title-1-b {
+					font-size: 20px !important;
+					line-height: 20px !important;
+				}
+
+				.title-1-w {
+					font-size: 20px !important;
+					line-height: 20px !important;
+				}
+
+				.title-2-w {
+					font-size: 20px !important;
+					line-height: 20px !important;
+					padding: 35px 0 0 0 !important;
+				}
+
+				.content-b {
+					font-size: 15px !important;
+					line-height: 18px !important;
+				}
+
+				.content-2-b {
+					font-size: 15px !important;
+					line-height: 18px !important;
+				}
+
+				.line-pd {
+					padding: 12px 0 !important;
+				}
+
+				.num {
+					max-width: 30px !important;
+					max-height: 30px !important;
+
+				}
+
+				.text-list {
+					font-size: 13px !important;
+				}
+			}
+		</style>
+		<style heml-ignore>
+			a {
+				text-decoration: none !important;
+				color: #ffffff !important;
+			}
+
+			.link-1 {
+				color: #000000 !important;
+			}
+
+			.link-2 {
+				color: #ffffff !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<container>
+			<container>
+				<block class="desk-v"><a href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kollekciya-fusiontec"
+						target="_blank"><img src="img/hero-desk.png" alt="hero" width="100%"></a>
+				</block>
+				<block class="mob-v"><a href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kollekciya-fusiontec"
+						target="_blank"><img src="img/hero-mob.png" alt="hero" width="100%"></a>
+				</block>
+			</container>
+			<container class="pd">
+				<row>
+					<column class="col-w-1">
+						<p class="title-1-b">Почувствуйте себя <span style="white-space: nowrap ;">шеф-поваром</span></p>
+						<p class="content-b">Раскройте своё кулинарное мастерство с рецептом национального испанского деликатеса.
+						</p>
+					</column>
+				</row>
+			</container>
+			<container class="pd color">
+				<row>
+					<column class="col-w-1">
+						<p class="title-1-w">Испанская паэлья</p>
+						<p class="content-w">Рис с шафраном, мясом кролика, чоризо, креветками, треской, моллюсками, перцем и
+							стручковой фасолью</p>
+					</column>
+				</row>
+			</container>
+			<container>
+				<block class="desk-v"><a
+						href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/nabory-kastryul/nabor-kastryul-wmf-fusiontec-rose-quartz-4-predmeta-16-slash-20-slash-20-slash-24-sm"
+						target="_blank"><img src="img/banner-desk.png" alt="banner" width="100%"></a>
+				</block>
+				<block class="mob-v"><a
+						href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/nabory-kastryul/nabor-kastryul-wmf-fusiontec-rose-quartz-4-predmeta-16-slash-20-slash-20-slash-24-sm"
+						target="_blank"><img src="img/banner-mob.png" alt="banner" width="100%"></a>
+				</block>
+			</container>
+			<container class="pd color">
+				<row>
+					<column class="col-w-2">
+						<p class="title-2-w">Ингредиенты на 4 порции</p>
+					</column>
+				</row>
+				<img class="line-pd left" src="img/line-1_1.png" alt="line" width="335">
+			</container>
+			<container class="pd color">
+				<row class="desk-v">
+					<column large="4" small="4">
+						<ul>
+							<li class="text-item">0,2 г шафрана</li>
+							<li class="text-item">2 луковицы</li>
+							<li class="text-item">100 г чоризо</li>
+							<li class="text-item">4 кроличьи ножки</li>
+							<li class="text-item">4 гигантские креветки (с головами и хвостами)</li>
+						</ul>
+					</column>
+					<column large="4" small="4">
+						<ul>
+							<li class="text-item">300 г филе трески</li>
+							<li class="text-item">300 г моллюсков</li>
+							<li class="text-item">1 красный перец</li>
+							<li class="text-item">100 г стручковой фасоли</li>
+							<li class="text-item">2 спелых томата</li>
+							<li class="text-item">Соль</li>
+						</ul>
+					</column>
+					<column large="4" small="4">
+						<ul>
+							<li class="text-item">100&nbsp;г замороженного гороха</li>
+							<li class="text-item">4 ст.л. оливкового масла</li>
+							<li class="text-item">200 г риса для паэльи</li>
+							<li class="text-item">700 мл рыбного бульона</li>
+							<li class="text-item">1 лимон</li>
+						</ul>
+					</column>
+				</row>
+				<row class="mob-v">
+					<column large="6" small="6">
+						<ul>
+							<li class="text-item">0,2 г шафрана</li>
+							<li class="text-item">2 луковицы</li>
+							<li class="text-item">100 г чоризо</li>
+							<li class="text-item">4 кроличьи ножки</li>
+							<li class="text-item">4 гигантские креветки (с головами и хвостами)</li>
+							<li class="text-item">100&nbsp;г замороженного гороха</li>
+							<li class="text-item">200 г риса для паэльи</li>
+							<li class="text-item">1 лимон</li>
+						</ul>
+					</column>
+					<column large="6" small="6">
+						<ul>
+							<li class="text-item">300 г филе трески</li>
+							<li class="text-item">300 г моллюсков</li>
+							<li class="text-item">1 красный перец</li>
+							<li class="text-item">100 г стручковой фасоли</li>
+							<li class="text-item">2 спелых томата</li>
+							<li class="text-item">Соль</li>
+							<li class="text-item">4 ст.л. оливкового масла</li>
+							<li class="text-item">700 мл рыбного бульона</li>
+						</ul>
+					</column>
+				</row>
+			</container>
+			<container class="pd color">
+				<row>
+					<column class="col-w-2">
+						<p class="title-2-w">Приготовление</p>
+					</column>
+				</row>
+				<img class="line-pd left" src="img/line-1_1.png" alt="line" width="200">
+			</container>
+			<container class="pd color">
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/1.png" alt="1"></column>
+					<column large="11" small="11">
+						<p class="text-list">Разотрите пальцами нити шафрана и замочите
+							их в 50 мл кипятка. Очистите и мелко нарежьте лук и чеснок.
+							Нарежьте чоризо на кусочки. Промойте кроличьи ножки, креветки, моллюски и треску в холодной воде
+							и промокните их бумажным полотенцем. Нарежьте треску на маленькие кусочки. Удалите раскрытые раковины
+							моллюсков.</p>
+					</column>
+				</row>
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/2.png" alt="2"></column>
+					<column large="11" small="11">
+						<p class="text-list">Помойте, очистите и нарежьте кубиками перец. Промойте и очистите фасоль, разрежьте
+							её пополам. Помойте
+							и нарежьте томаты мелкими кубиками.</p>
+					</column>
+				</row>
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/3.png" alt="3"></column>
+					<column large="11" small="11">
+						<p class="text-list">В высокой кастрюле Fusiontec Functional диаметром 24 см вскипятите подсоленную воду
+							и отварите
+							в ней фасоль в течение минуты, затем добавьте горошек и варите ещё минуту. Слейте воду через крышку
+							кастрюли.</p>
+					</column>
+				</row>
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/4.png" alt="4"></column>
+					<column large="11" small="11">
+						<p class="text-list">Разогрейте жаровню Fusiontec Aromatic 28 см и обжаривайте в нем кусочки чоризо
+							в течение 2 минут, затем
+							переложите их в миску и уберите в сторону. Налейте в сковороду оливковое масло и смешайте его с жиром
+							от чоризо. Обжаривайте кроличьи ножки примерно по 5 минут с каждой стороны, затем добавьте лук, чеснок
+							и перец и пассеруйте ещё 5 минут. Добавьте томаты, рыбный бульон и шафран (вместе с водой) и тщательно
+							все перемешайте.</p>
+					</column>
+				</row>
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/5.png" alt="5"></column>
+					<column large="11" small="11">
+						<p class="text-list">Положите в сотейник рис, посолите и тушите 5 минут на среднем огне без крышки,
+							постоянно помешивая. Слегка
+							посолите рыбу, выложите её, креветки и моллюски поверх риса и готовьте ещё 5 минут, не перемешивая.</p>
+					</column>
+				</row>
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/6.png" alt="two"></column>
+					<column large="11" small="11">
+						<p class="text-list">Добавьте фасоль, горошек и чоризо, хорошо прогрейте паэлью и выключите плиту. Дайте
+							блюду настояться 5–10 минут под крышкой.</p>
+					</column>
+				</row>
+				<row class="num-pd">
+					<column large="1" small="1"><img class="num" src="img/7.png" alt="two"></column>
+					<column large="11" small="11">
+						<p class="text-list" style="padding-top: 8px;">Подавайте паэлью с дольками лимона.</p>
+					</column>
+				</row>
+			</container>
+			<container class="pd">
+				<row>
+					<column class="col-w-1">
+						<p class="title-1-b">Новый вкус. Новый подход.</p>
+						<p class="content-b">Набор кастрюль Fusiontec позволяет повторять аромат и вкус оригинальных блюд со всего
+							мира.
+						</p>
+					</column>
+				</row>
+			</container>
+			<container class="pd">
+				<row>
+					<column class="img-prod">
+						<img class="img-central" src="img/gif-1.gif" alt="Посуда">
+						<row style="padding-top: 8px;">
+							<column large="6" small="6"><img src="img/ikon-1.png" alt="icon" width="77">
+								<p class="item-txt">Лучшие качества<br> в одном материале</p>
+							</column>
+							<column large="6" small="6"><img src="img/ikon-2.png" alt="icon" width="77">
+								<p class="item-txt">Сделано<br> в Германии</p>
+							</column>
+						</row>
+					</column>
+					<column class="text-prod">
+						<p class="title-2-b">Набор кастрюль Fusiontec Rose Quartz 4 предмета 16/20/20/24 см</p>
+						<img class="line-2-pd left" src="img/line-3_1.png" alt="line" width="250">
+						<p class="content-2-b">Запатентованный сплав изготовлен из нержавеющей стали и 20 минералов. Посуда
+							Fusiontec сочетает в себе равномерный нагрев алюминия, теплоёмкость чугуна и устойчивость к коррозии
+							и кислотам. Не боится царапин. Идеальное решение для ваших кулинарных изысков.</p>
+						<a
+							href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/nabory-kastryul/nabor-kastryul-wmf-fusiontec-rose-quartz-4-predmeta-16-slash-20-slash-20-slash-24-sm"><img
+								class="left" src="img/button-3.png" alt="кнопка" width="171"></a>
+					</column>
+				</row>
+			</container>
+			<container>
+				<row style="padding-top: 30px;">
+					<column large="3" small="6" style="padding-bottom: 15px;"><img class="img-central" src="img/pr-1.png" alt="1"
+							width="60" style="padding-left: 20px;">
+						<p class="item-txt">Ковш<br>Ø 16 см</p>
+						<a
+							href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kastryuli-i-kovshi/kovsh-wmf-fusiontec-rose-quartz-16-sm"><img
+								class="img-central" src="img/button-1.png" alt="buy" width="77"></a>
+					</column>
+					<column large="3" small="6" style="padding-bottom: 15px;"><img class="img-central" src="img/pr-2.png" alt="2"
+							width="60">
+						<p class="item-txt">Низкая кастрюля<br>Ø 20 см</p>
+						<a
+							href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kastryuli-i-kovshi/nizkaya-kastryulya-wmf-fusiontec-rose-quartz-20-sm"><img
+								class="img-central" src="img/button-1.png" alt="buy" width="77"></a>
+					</column>
+					<column large="3" small="6" style="padding-bottom: 15px;"><img class="img-central" src="img/pr-3.png" alt="3"
+							width="60">
+						<p class="item-txt">Низкая кастрюля<br>Ø 24 см</p>
+						<a
+							href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kastryuli-i-kovshi/nizkaya-kastryulya-wmf-fusiontec-rose-quartz-24-sm"><img
+								class="img-central" src="img/button-1.png" alt="buy" width="77"></a>
+					</column>
+					<column large="3" small="6" style="padding-bottom: 15px;"><img class="img-central" src="img/pr-4.png" alt="4"
+							width="52">
+						<p class="item-txt">Высокая кастрюля<br>Ø 24 см</p>
+						<a
+							href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kastryuli-i-kovshi/kastryulya-wmf-fusiontec-rose-quartz-24-sm"><img
+								class="img-central" src="img/button-1.png" alt="buy" width="77"></a>
+					</column>
+					<column large="3" small="12">
+						<img class="img-central" src="img/pr-5.png" alt="t-1" width="60">
+						<p class="item-txt">Жаровня Fusiontec<br>
+							Aromatic Ø 28 см</p>
+						<a
+							href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kastryuli-i-kovshi/zharovnya-wmf-fusiontec-aromatic-28-sm"><img
+								class="img-central" src="img/button-1.png" alt="buy" width="77"></a>
+					</column>
+				</row>
+			</container>
+
+			<container class="pd">
+				<a href="https://shop.wmfrussia.com/catalog/skovorody-i-kastryuli/kollekciya-fusiontec"><img class="btn-pd"
+						src="img/button-2.png" alt="кнопка" width="170"></a>
+			</container>
+			<container>
+				<block>
+					<p class="offer-content">Если у Вас возникли вопросы — звоните на бесплатный номер <strong><a class="link-1"
+								href="tel:88005505236" style="white-space: nowrap;">8-800-550-52-36</a></strong> или пишите в
+						разделе «Служба
+						поддержки» Личного кабинета. Наши операторы работают ежедневно с 9:00 до 21:00</p>
+				</block>
+
+			</container>
+			<container>
+				<block class="offer-block">
+					<row>
+						<column>
+							<div class="offer-central"><a href="https://shop.wmfrussia.com/pages/garantiya-i-servis"
+									target="_blank"><img class="offer-img" width="50" src="img/ser-1.png" alt="Гарантия"></a>
+								<a href="https://shop.wmfrussia.com/pages/garantiya-i-servis">
+									<p class="offer-title" target="_blank">Гарантия и сервис</p>
+								</a>
+								<p class="offer-text">Что делать если у Вас<br> сломалась техника?</p>
+							</div>
+						</column>
+						<column>
+							<div class="offer-central"><a href="https://shop.wmfrussia.com/pages/sposoby-oplaty" target="_blank"><img
+										class="offer-img" width="50" src="img/ryb-1.png" alt="Оплата"></a>
+								<a href="https://shop.wmfrussia.com/pages/sposoby-oplaty" target="_blank">
+									<p class="offer-title">Способы оплаты</p>
+								</a>
+								<p class="offer-text">Покупайте сейчас&nbsp;—<br>платите потом</p>
+							</div>
+						</column>
+					</row>
+					<row>
+						<column>
+							<div class="offer-central"><a href="https://shop.wmfrussia.com/pages/obmen-i-vozvrat" target="_blank"><img
+										class="offer-img" width="50" src="img/swap-1.png" alt="Возврат"></a>
+								<a href="https://shop.wmfrussia.com/pages/obmen-i-vozvrat" target="_blank">
+									<p class="offer-title">Обмен и возврат</p>
+								</a>
+								<p class="offer-text"> По любой причине<br>в течение 7 дней</p>
+							</div>
+						</column>
+						<column>
+							<div class="offer-central"><a href="https://shop.wmfrussia.com/pages/usloviya-dostavki"
+									target="_blank"><img class="offer-img" width="50" src="img/del-1.png" alt="Dostavka"></a>
+								<a href="https://shop.wmfrussia.com/pages/usloviya-dostavki" target="_blank">
+									<p class="offer-title">Бесплатная доставка</p>
+									<p class="offer-text">по Москве и Санкт-Петербургу<br>
+										при заказе от 3 000 ₽</p>
+								</a>
+							</div>
+						</column>
+					</row>
+				</block>
+			</container>
+			<container>
+				<block class="central foot-txt">
+					<row>
+						<column large="3" small="3">
+							<a href="https://t.me/WMFRussiaBot"><img src="img/telegram.png" width="27" height="27" alt="tg"></a>
+						</column>
+						<column large="3" small="3" class="foot-txt-list"> <a href="https://shop.wmfrussia.com/pages/sposoby-oplaty"
+								style="text-decoration: none; color: #000000;">ОПЛАТА</a>
+						</column>
+						<column large="3" small="3" class="foot-txt-list"> <a
+								href="https://shop.wmfrussia.com/pages/obmen-i-vozvrat"
+								style="text-decoration: none; color: #000000;">ВОЗВРАТ</a>
+						</column>
+						<column large="3" small="3" class="foot-txt-list"> <a
+								href="https://shop.wmfrussia.com/pages/kontakty-i-rekvizity"
+								style="text-decoration: none; color: #000000;">КОНТАКТ</a>
+						</column>
+					</row>
+
+				</block>
+			</container>
+			<container class="pd" style="background-color: #000000;">
+				<block>
+					<p style="color: #ffffff; font-size: 12px;">Вы получили это письмо, потому что подписались на рассылку на
+						сайте <u><a class="link-3" href="https://shop.wmfrussia.com/">shop.wmfrussia.com</a></u> Чтобы
+						отписаться, пройдите по
+						<a class="link-3" href="${Message.UnsubscribeLink}"><u>ссылке.</u></a>
+					</p>
+				</block>
+
+			</container>
+		</container>
+	</body>
+</heml>
